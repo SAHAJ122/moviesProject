@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopCorn Time</title>
+    <script src="https://kit.fontawesome.com/0c27ecdc4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="infiniteScroll.css">
+    <script src="https://kit.fontawesome.com/0c27ecdc4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="moviesFinal.css">
+</head>
+
+<body>
+    <header id="body-header">
+        <nav id="desktop-nav">
+            <div class="logo">
+                <h1>PopCorn<span> Time</span></h1>
+            </div>
+
+            <div class="mid-nav">
+                <ul>
+
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#timeOriginals">Originals</a></li>
+                    <li><a href="#horror-movies">Horror</a></li>
+                    <li><a href="#newsletter">Blog</a></li>
+                    <li><a href="#sign-up-container">Sign Up</a></li>
+
+                </ul>
+            </div>
+
+            <div class="right-nav">
+                <form action="/search">
+                    <input type="search" name="searchBox" id="searchBox" placeholder="search...">
+                </form>
+            </div>
+        </nav>
+        <div class="mobile-bar">
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#timeOriginals">Originals</a></li>
+                <li><a href="#horror-movies">Horror</a></li>
+                <li><a href="#newsletter">Blog</a></li>
+                <li><a href="#sign-up-container">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="slide-container">
+            <div class="slide">
+                <img src="/image/background_1.jpg" alt="">
+                
+                <div class="caption">
+                    <h1>The Maze Runner</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Thomas is deposited in a community of boys after his memory is erased, soon learning they're all trapped in a maze that will require him to join forces with fellow "runners" for a shot at escape.
+                    </p>
+                    <div class="genre">
+                        <a href="">Action</a>
+                        <a href="">Suspense</a>
+                    </div>
+                    <div class="play-btn">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="/image/background_2.jpg" alt="">
+                <div class="caption">
+                    <h1>The Avengers</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+                    </p>
+                    <div class="genre">
+                        <a href="">Action</a>
+                        <a href="">Adventure</a>
+                    </div>
+                    <div class="play-btn">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="/image/justice.webp" alt="">
+                <div class="caption">
+                    <h1>Justice League</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his new-found ally, Diana Prince, to face an even greater enemy.
+                    </p>
+                    <div class="genre">
+                        <a href="">Action</a>
+                        <a href="">Fiction</a>
+                    </div>
+                    <div class="play-btn">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="/image/background_inception.jpg" alt="">
+
+                <div class="caption">
+                    <h1>Inception</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.
+                    </p>
+                    <div class="genre">
+                        <a href="">Action</a>
+                        <a href="">Sci-fi</a>
+                    </div>
+                    <div class="play-btn">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+            <span class="arrow next" onclick="controller(+1)">&#10095</span>
+    
+        </div>
+    </header>
+
+    <main>
+        <section class="product"> 
+
+            <h2 class="product-category" id="trending"><span>trending </span>movies</h2>
+            
+            <button class="pre-btn"><span>&#10095</span></button>
+            <button class="nxt-btn"><span>&#10095</span></button>
+    
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Black Panther Wakanada Forever</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/Black_Panther.webp" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Money Heist - Season 1</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2021 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/money_heist.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Black Adam</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/Black_Adam.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Spider-Man Homecoming </p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2019 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/spidermanHomecoming.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Avatar - The Beginning</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/avatar.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>211</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2023 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/211Movie.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Expendables 2</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2017 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/expandables2.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Bhaag Milkha Bhaag</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2014 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/bhagmilkha.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>                  
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Inception</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2017 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/inception.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Offering</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2019 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/offering.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="originals product" id="timeOriginals">
+            <h1>PopCorn <span>Time</span> Originals</h1>
+
+            <button class="pre-btn"><span>&#10095</span></button>
+            <button class="nxt-btn"><span>&#10095</span></button>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Black Panther Wakanada Forever</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/Black_Panther.webp" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Money Heist - Season 1</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2021 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/money_heist.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Black Adam</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/Black_Adam.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Spider-Man Homecoming </p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2019 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/spidermanHomecoming.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Avatar - The Beginning</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/avatar.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>211</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2023 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/211Movie.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Expendables 2</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2017 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/expandables2.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Bhaag Milkha Bhaag</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2014 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/bhagmilkha.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>                  
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Inception</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2017 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/inception.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Offering</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2019 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/offering.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="originals product" id="horror-movies">
+            <h1><span>Horror</span> Movies</h1>
+
+            <button class="pre-btn"><span>&#10095</span></button>
+            <button class="nxt-btn"><span>&#10095</span></button>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Conjuring 2</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror1.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Circus - 2</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2021 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror2.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Horror Story</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror9.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>He's Out There</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2019 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror4.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Halloween - The Night He Comes Home</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2020 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror5.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Ghost</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2023 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror6.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Nun</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2017 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror7.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Horror Story</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2014 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.0</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horror9.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>                  
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>Phoonk</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2017 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>4.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/horro8.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="card-details">
+                            <div class="name">
+                                <div class="all-details">
+                                    <p>The Offering</p>
+                                    <p class="HD">
+                                        <span><img src="image/badge-hd-fill.svg" alt=""></span>
+                                        <span> &nbsp; 2019 </span>
+                                    </p>
+                                    <p>
+                                        <span><i class="fa-solid fa-clock" style="color:#0084ff;"></i></span><span> &nbsp;120 min</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating"> <b>3.5</b> <i class="fa-solid fa-star"></i></span>
+                        <img src="image/offering.jpg" class="product-thumb" alt="">
+                        <div>
+                            <button class="card-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="newsletter-container">
+            <div id="newsletter">
+                <h1>Subscribe For Updates!</h1>
+                <form action="">
+                    <div class="subscribe-container">
+                    
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="create-account" id="sign-up-container">
+            <!-- <div>
+                <h1>PopCorn <span>Time</span> Originals</h1>
+            </div> -->
+
+            <div class="create-account-bg">
+                <h1>Create Account</h1>
+                <br>
+                <form action="" id="sign-up-form">
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Number">              
+                    <input type="email" name="email_ID" id="email_ID" placeholder="Email" required>
+                    <input type="password" name="password" id="password" required placeholder="password">
+                    <div class="bc">
+                        <button type="submit" id="create-account-submit-btn"> <b>Submit</b> </button>
+                    </div>
+                </form>
+                <!-- <button type="submit" id="create-account-submit-btn"> <b>Submit</b> </button> -->
+                
+            </div>
+        </section>
+
+    </main>
+    <script src="moviesScript.js"></script>
+    <script src="slider.js"></script>
+    <script src="infiniteScroll.js"></script>
+</body> 
+</html>
