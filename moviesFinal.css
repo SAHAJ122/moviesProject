@@ -1,0 +1,397 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+    /* font-size: px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+#body-header
+{
+    height: auto;
+    border: 2px solid black;
+}
+
+/* NAV MENU DESKTOP */
+.logo h1 {
+    color: white;
+}
+.logo h1 span{
+    color: #0084ff;
+}
+
+#desktop-nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    position: fixed;
+    background-color: black;
+    height: 47px;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+}
+
+/* mid nav */
+.mid-nav{
+    display: inline-block;
+}
+
+.mid-nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.mid-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.mid-nav ul li a{
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.mid-nav ul li a:hover
+{
+    color: #0084ff;
+    transition: ease-in-out 0.6s;
+}
+#home
+{
+    padding-left: 0px;
+    margin-left: -21px;
+}
+
+/* Search Box */
+.right-nav #searchBox
+{
+    width: 175px;
+    height: 27px;
+    padding: 6px;
+    margin-right: 4px;
+    margin-top: 2px;
+    border: 1.9px solid #0084ff;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#searchBox:focus
+{
+  outline:none;
+}
+
+/* NAV MENU DESKTOP ENDS*/
+
+/* Mobile Nav Bar */
+
+/* TRENDING MOVIES */
+
+#trendingMovies
+{
+    height: 20vh;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+#trendingMovies h1
+{
+    color: white;
+}
+
+/* Create Account */
+
+.create-account
+{
+    background-image: url(image/multiMovies.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-account-bg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 55px 40px;
+    background-color: rgba(0,0,0,0.75);
+    height: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.create-account-bg h1
+{
+    color: white;
+}
+.create-account-bg input , #create-account-submit-btn
+{
+    margin: 15px;
+    padding: 10px 10px;
+    border: 0px solid transparent;
+    /* border: 2px solid white; */
+    color: #d9dcdd;
+    background: #333;
+    /* width: 30%; */
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+#create-account-submit-btn
+{
+    margin: 15px;
+    padding: 10px 10px;
+    background-color: #0084ff;
+    width: 160px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bc
+{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#sign-up-form
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#newsletter-container
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+#newsletter
+{
+    width: 100%;
+    height: auto;
+    /* padding: 25px 50px 75px 25px; */
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+#newsletter h1
+{
+    color: #0084ff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.subscribe-container
+{
+    position: relative;
+    width: 500px;
+    height: 39px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-container input
+{
+    width: 100%;   
+    height: 40px;
+    border: 3px solid #4848e3;
+    border-radius: 35px;
+    font-size: 1.0rem;
+    padding: 8px 0px 8px 28px;
+}
+
+
+.subscribe-container input:focus
+{
+    outline: none;
+}
+
+.subscribe-btn
+{
+    position: absolute;
+    height: 57px;
+    width: 100px;
+    color: white;
+    background-color: #0084ff;
+    right: 2px;
+    top: -9px;
+    border: 0px;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+/* mobile-nav */
+
+.mobile-bar{
+    background-color: #0084ff;
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+.mobile-bar h2 {
+    text-align: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.mobile-bar h2 span
+{
+    color: black;
+}
+.hamburger {
+    position: fixed;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    /* visibility: hidden; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    right: 20px;
+    top: 0px;
+    z-index: 101;
+}
+
+
+/* Designing Mobile Nav */
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    z-index: 99;
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px)
+}
+
+.hamburger.is-active:after {
+    -webkit-transform: rotate(40deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0
+}
+
+.mobile-list li{
+    list-style: none;
+    padding-top: 16px;
+    margin-left: 10px;
+}
+
+.mobile-list li a {
+    font-size: 1.02rem;
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 9%;
+    left: 120%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 99;
+    background-color: #0a0a0a;
+    opacity: 0.92;
+    padding-top: 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.6s ease-in-out;
+}
+
+.mobile-nav.is-active {
+    left: 20%;
+}
+
+
+/* Addding Media Queries */
+
+/* To Hide The Hamburger in Desktop */
+@media (min-width: 954px) {
+    .mobile-nav {
+        display: none
+    }
+    .mobile-bar{
+        display: none;
+    }
+    .hamburger {
+        display: none
+    }
+}
+
+@media screen and (max-width:954px)
+{
+    #desktop-nav
+    {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .subscribe-container {
+        display: block;
+        position: static;
+        width: 75%;
+        height: auto;
+    }
+
+    .subscribe-container input{
+        display: block;
+        width: 70%;
+        padding: 0px;
+        text-align: center;
+        margin:3px auto;
+        margin-bottom: 0px;
+        border: none;
+        border-radius: 12px 12px 0px 0px;
+    }
+    .subscribe-container button {
+        display: block;
+        position: static;
+        margin: 0px auto;
+        height: 39px;
+        font-weight: bolder;
+        width: 70%;
+        font-weight: bolder;
+        border-radius: 0px 0px 14px 14px;
+    }
+}
